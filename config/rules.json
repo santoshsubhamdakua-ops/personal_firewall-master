@@ -1,0 +1,26 @@
+{
+      "firewall_name": "PyWall C++ Engine",
+      "version": "1.0.0",
+      "rules": {
+        "blocked_ips": [
+          "192.168.1.250",
+          "10.0.0.99",
+          "172.16.0.4"
+
+        ],
+        "blocked_ports": [
+          23,
+          445,
+          135,
+          3389,
+          8080
+        ],
+        "blocked_protocols": [
+          "ICMP"
+        ]
+      },
+      "logging": {
+        "log_allowed_packets": true,
+        "log_file_path": "logs/firewall.log"
+      }
+    }
